@@ -14,7 +14,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Telelogger\\": "src"
+      "Telelogger\\Laravel": "src"
     }
   },
   "require": {
@@ -32,12 +32,15 @@
     "roave/security-advisories": "dev-master"
   },
   "extra": {
+    "branch-alias": {
+      "dev-0.x": "0.x-dev"
+    },
     "laravel": {
       "providers": [
-        "Telelogger\\ServiceProvider"
+        "Telelogger\\Laravel\\ServiceProvider"
       ],
       "aliases": {
-        "Telelogger": "Telelogger\\Facade"
+        "Telelogger": "Telelogger\\Laravel\\Facade"
       }
     }
   }
