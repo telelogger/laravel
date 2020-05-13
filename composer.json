@@ -1,6 +1,6 @@
 {
   "name": "telelogger/laravel",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "Send Laravel logs to a Telegram chat via Telegram Bot.",
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -14,7 +14,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Telelogger\\Laravel": "src/"
+      "Telelogger\\Laravel\\": "src/"
     }
   },
   "require": {
