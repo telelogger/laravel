@@ -204,7 +204,14 @@ class EventHandler
             return;
         }
 
-        $this->addQueryBreadcrumb($query, $bindings, $time, $connectionName);
+        $data = ['connectionName' => $connectionName];
+
+        if ($time !== null) {
+            $data['time'] = $time;
+        }
+        $data['query'] = vsprintf(str_replace(array('?'), array('\'%s\''), $query), $bindings);;
+
+        Breadcrumbs::getInstance()->add($data);
     }
 
     /**
