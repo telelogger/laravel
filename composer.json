@@ -14,7 +14,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Telelogger\\Laravel": "src"
+      "Telelogger\\Laravel": "src/"
     }
   },
   "require": {
