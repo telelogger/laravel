@@ -34,10 +34,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Telelogger\\Laravel\\ServiceProvider"
+        "Telelogger\\ServiceProvider"
       ],
       "aliases": {
-        "Telelogger": "Telelogger\\Laravel\\Facade"
+        "Telelogger": "Telelogger\\Facade"
       }
     }
   }
