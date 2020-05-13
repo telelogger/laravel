@@ -1,6 +1,6 @@
 {
   "name": "telelogger/laravel",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Send Laravel logs to a Telegram chat via Telegram Bot.",
   "minimum-stability": "dev",
   "prefer-stable": true,
